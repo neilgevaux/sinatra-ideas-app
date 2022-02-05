@@ -1,8 +1,24 @@
+require "sinatra"
 require "sinatra/base"
 require "sinatra/activerecord"
 # BCrypt for encrypting the passwords
-require "bcrypt"
+# require "bcrypt"
 
 class App < Sinatra::Base
   register Sinatra::ActiveRecordExtension
 end
+
+# CRUD actions
+
+# Create
+get '/' do
+    erb :index
+  end
+
+# Read
+
+
+# Update
+
+
+# Delete
